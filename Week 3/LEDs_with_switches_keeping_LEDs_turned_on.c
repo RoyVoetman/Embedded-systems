@@ -1,5 +1,5 @@
 //
-// Take your code from the last weeks assignment to switch two LEDs with two switches
+// Take your code from last weeks assignment to switch two LEDs with two switches
 // Translate that AVR Asm code into C code
 //
 // Author: Roy Voetman
