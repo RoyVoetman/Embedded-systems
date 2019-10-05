@@ -20,8 +20,10 @@ src: .db "hello world !"        ; Define character array "hello world !" in code
 start:                          ; Define label "start"
     ldi zh, high(2*src)         ; Let the Z pointer point to the first character in the "src" array
     ldi zl, low(2*src)          ; The multiplication by two is needed because the code segment consists of 16 bit registers
-                                ; The Atmel Data Sheets states that the Z pointer will point to either the high or low byte of a register
+                                ; The Atmel Data Sheets states that the Z pointer will point to either the high or low byte of a register  in cseg
                                 ; To correctly map the code segment address to the correct Z pointer address you have to multiply the address by two
+                                ; All characters of the string "src" are stored as there ASCII representation shown by the surrounding double quotes.
+                                ; An ASCII character is always one byte so the Z pointer will point to exactly one character in the string at the time
     
     ldi xh, high(dest)          ; Let the X pointer point to the first byte allocated referenced by "dest"
     ldi xl, low(dest)           ; The addresses are 16 bit so we need a high and a low byte to store the full address
