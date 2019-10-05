@@ -1,4 +1,4 @@
-# Embedded-systems
+# Embedded systems
 University assignments for the Atmel AVR ATMega328P in AVR Assembly and C.
 
 ## Subjects covered
