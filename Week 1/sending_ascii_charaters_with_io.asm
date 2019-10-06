@@ -32,6 +32,6 @@ BEGIN:                           ; Define label "BEGIN"
     rjmp BEGIN                   ; Set Program Counter equal to address saved in "BEGIN" (i.e. Go to BEGIN label)
 
 .org 20                          ; Set origin equal to 20 (note this is a base 10 number not base 16)
-                                 ; 20 in base 10 = 14 in base 16 (i.e. next line will begin at address 0x16 in code segment)
+                                 ; 20 in base 10 = 14 in base 16 (i.e. next line will begin at address 0x14 in code segment)
 ASCII_TABLE:                     ; Define label "ASCII_TABLE"
-    .DB '0','1','2','3','4','5','6','7' ; Save the ASCII representation of the digits 0 to 7 back to back in memory starting at address 0x16
+    .DB '0','1','2','3','4','5','6','7' ; Save the ASCII representation of the digits 0 to 7 back to back in memory starting at address 0x14
