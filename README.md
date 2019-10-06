@@ -4,8 +4,8 @@ University assignments for the Atmel AVR ATMega328P in AVR Assembly and C.
 ## Subjects covered
 
 ### Week 1
-* The structure of AVR assembly.
-* AVR instructions.
+* The structure of AVR assembly
+* AVR instructions
 * AVR registers and I/O
 * ATmega memory map
 * Atmel Studio
