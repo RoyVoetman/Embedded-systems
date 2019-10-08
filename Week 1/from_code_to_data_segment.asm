@@ -35,7 +35,7 @@ loop:                           ; Define label loop
     lpm                         ; The Instruction Set states the if LPM is used without operands
                                 ; it will store the value where the Z pointer is pointing to into register 0 (aliased as "temp")
     inc z                       ; Increment the Z pointer to point at the next character in the "src" array
-    lst x+, temp                ; Store the value of temp (register 0) at the location where the X pointer is pointing
+    st x+, temp                 ; Store the value of temp (register 0) at the location where the X pointer is pointing
                                 ; Post increment x (x+) so the X pointer is incremented after the store instruction
     inc counter                 ; Increment the value in counter (register 17)
     cpi counter, length         ; Compare the value in counter (register 17) with the constant length.
