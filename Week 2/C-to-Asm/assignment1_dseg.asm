@@ -68,16 +68,16 @@ not_equal_six:		; if (b == 3)
 	sts a+1, r25
 
 while:
-    lds r24,a    	; while (a > 0)
-    lds r25,a+1
-    ldi r16, 1
-    ldi r17, 0
-    cp r24, r16
-    cpc r25, r17
-    brge true
+    	lds r24,a    	; while (a > 0)
+    	lds r25,a+1
+    	ldi r16, 1
+    	ldi r17, 0
+    	cp r24, r16
+    	cpc r25, r17
+    	brge true
 
 end:
-    rjmp end	
+    	rjmp end	
 
 true:
-    rjmp do
+   	rjmp do
