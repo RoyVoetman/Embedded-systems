@@ -1,6 +1,6 @@
 ;
 ; Assignment write the C (assignment1.c) in AVR Assembly
-; By storing and retrieving values from RAM assuming all integer are 16 bits
+; By storing and retrieving values from RAM (assuming 16 bit integers)
 ;
 ; Author: Roy Voetman
 ;
