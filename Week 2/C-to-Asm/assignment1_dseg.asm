@@ -41,15 +41,15 @@ do:
 
 	lds r24,b		; if (b == 6)
 	lds r25,b+1
-    sbiw r25:r24, 6
-    brne not_equal_six
+    	sbiw r25:r24, 6
+    	brne not_equal_six
 
 	lds r24,b		; b = b - a
 	lds r25,b+1
 	lds r26,a
 	lds r27,a+1
 	sub r24,r26
-    sbc r25,r27
+    	sbc r25,r27
 	sts b, r24
 	sts b+1, r25
 
@@ -58,8 +58,8 @@ do:
 not_equal_six:		; if (b == 3)
 	lds r24,b		
 	lds r25,b+1
-    sbiw r25:r24, 3
-    brne while
+    	sbiw r25:r24, 3
+    	brne while
 
 	lds r24,a       ; a = a - 1
 	lds r25,a+1
@@ -70,14 +70,14 @@ not_equal_six:		; if (b == 3)
 while:
     lds r24,a    	; while (a > 0)
     lds r25,a+1
-	ldi r16, 1
-	ldi r17, 0
+    ldi r16, 1
+    ldi r17, 0
     cp r24, r16
     cpc r25, r17
     brge true
 
 end:
-	rjmp end	
+    rjmp end	
 
 true:
-	rjmp do
+    rjmp do
