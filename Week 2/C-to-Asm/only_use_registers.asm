@@ -1,6 +1,6 @@
 ;
 ; Assignment write the C (assignment1.c) in AVR Assembly
-; Using only register
+; Only use registers
 ;
 ; Author: Roy Voetman
 ;
